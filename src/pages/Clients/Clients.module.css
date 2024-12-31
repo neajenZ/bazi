@@ -1,0 +1,41 @@
+.background {
+  background: url('/background-intro.png') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window {
+  max-width: 1120px;
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  padding: 48px;
+  display: flex;
+  align-items: stretch;
+  gap: 17px;
+}
+
+.baziWrapper {
+  display: grid;
+  grid-template-columns: 35% auto;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .window {
+    padding: 12px;
+    margin: 0 6px;
+  }
+  .baziWrapper {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}

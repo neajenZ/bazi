@@ -1,0 +1,67 @@
+.body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.body label {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body input {
+  background: #fff;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+
+  font-weight: 400;
+  color: #ffbc91;
+  border-radius: 10px;
+}
+
+.body input::placeholder {
+  color: #ffbc91;
+}
+
+.outlined {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.outlined::placeholder {
+  color: #fff !important;
+}
+
+.labelInto {
+  position: relative;
+}
+
+.labelInto label {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  font-size: 12px;
+  color: #baa79b;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.labelInto input {
+  padding: 22px 20px 8px 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+
+  .labelInto input {
+    padding-right: 2px !important;
+  }
+}

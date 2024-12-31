@@ -1,0 +1,76 @@
+.background {
+  background: url('/auth-bg.jpg') center no-repeat;
+  height: calc(100% - 202px);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window {
+  max-width: 520px;
+  width: 100%;
+  background: #ffffff00;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: auto;
+}
+
+.variants {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.variants div {
+  width: 1px;
+  background: #fff;
+}
+
+.variants span {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: var(--second) !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form button {
+  background: var(--second);
+  border-radius: 12px;
+  padding: 16px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline;
+}

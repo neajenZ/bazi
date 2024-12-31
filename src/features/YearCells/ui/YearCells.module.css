@@ -1,0 +1,16 @@
+.wrapper {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        grid-template-columns: repeat(4, 90px);
+        justify-content: center;
+        grid-template-rows: auto;
+    }
+}

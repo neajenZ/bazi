@@ -1,0 +1,18 @@
+.body {
+  border: 1px solid var(--black);
+  width: 110px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blueChar {
+  color: #1b34cf;
+}
+
+@media (max-width: 480px) {
+  .body {
+    width: 90px;
+  }
+}

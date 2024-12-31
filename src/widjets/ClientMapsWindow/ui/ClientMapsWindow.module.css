@@ -1,0 +1,59 @@
+.body {
+  padding: 25px 16px;
+  background-color: var(--black);
+}
+
+.wrapper {
+  background-color: var(--thirdbackground);
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header h4 {
+  color: var(--second);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.widjets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.actions button {
+  padding: 10px;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #00c7be;
+}
+
+.note {
+  background: red !important;
+}

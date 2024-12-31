@@ -1,0 +1,60 @@
+.body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.body label {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.selectBody {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffbc91;
+  width: 100%;
+  background: #fff;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.selectBody span {
+  pointer-events: none;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 63px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 63px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 63px 0px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  z-index: 10;
+}
+
+.option {
+  width: 100%;
+  padding: 6px 0;
+}

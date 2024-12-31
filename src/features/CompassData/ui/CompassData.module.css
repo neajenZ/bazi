@@ -1,0 +1,70 @@
+.dataItem {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dataItem .wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.item path {
+  stroke: var(--second);
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.item .left {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.saveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.saveBtn button {
+  padding: 10px 0;
+  width: 40%;
+}
+
+.buttons button {
+  padding: 10px 0;
+}
+
+.buttons button:first-child {
+  background: #00c7be;
+}
+
+.buttons button:last-child {
+  background: red;
+}

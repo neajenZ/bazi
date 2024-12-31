@@ -1,0 +1,153 @@
+@import url('./app/fonts/stylesheet.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'GT Eesti Pro Text';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --back: #ffe4d3;
+  --backdarker: #ffe4d3;
+  --backlight: #ffbc91;
+  --second: #ff7723;
+  --black: #1e1305;
+  --thirdbackground: #e9d8c4;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-page {
+  overflow-x: hidden;
+}
+
+
+body.active-menu {
+  overflow: hidden;
+  .overlay-menu {
+    right: 0;
+  }
+}
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+}
+
+.burger-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-mobile-box{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+}
+.burger-mobile-line{
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 5px;
+  background-color: #fff;
+
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+}
+
+.burger-mobile-line:before{
+  display: block;
+  content: '';
+  top: 5px;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 5px;
+  background-color: white;
+}
+.burger-mobile-line:after{
+  display: block;
+  content: '';
+  bottom: 5px;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+.active-mobile-btn .burger-mobile-line {
+  transition-delay: .12s !important;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1) !important;
+  transform: rotate(45deg) !important;
+}
+
+.active-mobile-btn .burger-mobile-line:after{
+  bottom: 0 !important;
+  transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s !important;
+  transform: rotate(-90deg) !important;
+}
+.active-mobile-btn .burger-mobile-line:before{
+  top: 0;
+  transition: top 75ms ease,opacity 75ms ease .12s;
+  opacity: 0;
+}

@@ -1,0 +1,126 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+.otherBazi {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.secondRowBazi {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.leftBazi {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.userInfoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInfoHeader h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--second);
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.body {
+  padding: 20px;
+  grid-column: span 2;
+  background-color: var(--thirdbackground);
+}
+
+.input::placeholder {
+  color: var(--black) !important;
+}
+
+.input {
+  color: var(--black) !important;
+}
+
+.formDate {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.userForm button {
+  max-width: 250px;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bazi {
+  width: 110px;
+}
+
+.baziSmallFooter {
+  background-color: #fff !important;
+  color: var(--black);
+  border-top: 1px solid var(--black);
+}
+
+
+@media (max-width: 480px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body {
+    padding: 10px;
+    grid-column: initial !important;
+  }
+  .otherBazi {
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .secondRowBazi {
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+    grid-template-rows: auto;
+  }
+
+  .leftBazi {
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+  }
+
+  .bazi {
+    width: 90px;
+  }
+}

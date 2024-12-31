@@ -1,0 +1,30 @@
+.body {
+  padding: 20px;
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px 0 0 200px;
+}
+
+.body span {
+  color: var(--black);
+  font-size: 25px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.left {
+  flex-direction: row-reverse;
+  border-radius: 0 200px 200px 0;
+}
+
+
+@media (max-width: 1260px) {
+  .body {
+    padding: 12px;
+  }
+  .body span {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,30 @@
+.body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.body label {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body textarea {
+  background: #fff !important;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffbc91;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+}
+
+.body textarea::placeholder {
+  color: #ffbc91;
+}

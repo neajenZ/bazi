@@ -1,0 +1,37 @@
+.loadImageBody {
+  position: relative;
+}
+
+.loadImageBody input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.loadImageBody input:focus + span {
+  box-shadow: 0 0 2px 2px #fff;
+}
+
+.loadImageBody label {
+  position: relative;
+  z-index: 1000;
+}
+
+.loadImageBody label {
+  width: 100%;
+  color: #fff;
+  background-color: var(--second);
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loadImageBody label.withIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+}

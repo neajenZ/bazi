@@ -1,0 +1,71 @@
+.body {
+  position: relative;
+  height: 100%;
+}
+
+.mapCompass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftSide {
+  background: var(--thirdbackground);
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: calc(100% - 20px);
+  z-index: 5;
+  width: 393px;
+}
+
+.leftSide h4 {
+  color: var(--second);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.leftSide .container {
+  position: relative;
+}
+
+.hideMenuBtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 5;
+  transform: scale(0.95);
+}
+
+.hideMenuBtn.hiddenMenuPosition {
+  left: calc(100vw - 40px);
+  padding: 12px 24px;
+  border-radius: 13px;
+  background: var(--black);
+}
+
+.hideMenuBtn svg {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.hideMenuBtn path {
+  fill: var(--black);
+}
+
+.hideMenuBtn.hiddenMenuPosition path {
+  fill: var(--thirdbackground);
+}
+
+@media (max-width: 480px) {
+  .leftSide {
+    width: 100% !important;
+  }
+  .hideMenuBtn.hiddenMenuPosition {
+    left: 99% !important;
+  }
+}

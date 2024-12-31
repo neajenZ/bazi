@@ -1,0 +1,124 @@
+.body {
+  background: var(--thirdbackground);
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: calc(100% - 20px);
+  z-index: 100;
+  width: 393px;
+}
+
+.inputBody input {
+  padding: 9px 14px 9px 32px;
+  width: 92%;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--second);
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+.inputBody {
+  position: relative;
+}
+
+.inputBody input::placeholder {
+  color: var(--second);
+}
+
+.searchIco {
+  left: 0 !important;
+  transform: translate(292px, -50%) scale(0.8) !important;
+  cursor: pointer;
+}
+
+.inputBody svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.body h4 {
+  color: var(--second);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.resultItemWrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.resultItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.resultItem svg path {
+  stroke: var(--second);
+}
+
+.resultItem span {
+  color: var(--second);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.resultItem h3 {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.resultWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.compasses .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.compasses .wrapper img {
+  width: 33%;
+  border: 2px solid transparent;
+  padding: 2px;
+  border-radius: 13px;
+}
+
+.selectedCompass {
+  border-color: #fff !important;
+}
+
+.addPhotoBtn button {
+  border-radius: 43px;
+}
+
+.addPhotoBtn {
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .searchIco {
+    left: 100% !important;
+    transform: translate(-55px, -50%) scale(0.8) !important;
+  }
+}
